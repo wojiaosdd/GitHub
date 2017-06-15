@@ -32,7 +32,7 @@ html{
     #all_left {
         width: 10rem;
         height: 100%;
-        z-index: 999;
+        z-index: 1000;
         position: absolute;
         display: -webkit-flex;
         flex-direction: column;
@@ -143,13 +143,13 @@ html{
                         }
                     }
                 }
-                .lbt{
+                #lbt{
                     width: 15rem;
                     height: 10rem;
-                    margin:0.8rem auto;
+                    margin:0.8rem 0.5rem;
                     overflow: hidden;
                     position: relative;
-                    .lbt_ul{
+                    #lbt_ul{
                         position: absolute;
                         top: 0;
                         left: 0;
@@ -162,14 +162,20 @@ html{
                             float: left;
                             overflow: hidden;
                             a{
-                                width: 15rem;
-                                height: 100%;
+                                width: 100%;
+                                height: auto;
                                 img{
-                                   
+                                    display:block;
                                     width: 15rem;
                                     height: 10rem;
                                 }
                             }
+                        }
+                    }
+                    .swiper-pagination{
+                        span{
+                            width: 0.4rem;
+                            height: 0.4rem;
                         }
                     }
                 }
@@ -213,10 +219,9 @@ html{
             .sousou {
                 -webkit-flex:6;
                 height: 2rem;
-                text-align: center;
                 line-height: 1.2rem;
                 border: 2px solid #aaa;
-                padding-top: 0.25rem;
+                padding: 0.25rem 0 0 0.25rem;
                 border-radius: 8px;
                 a {
                     width: 100%;
@@ -409,7 +414,7 @@ html{
             width: 100%;
             height: auto;
             background: white;
-            z-index: 10001;
+            z-index: 999;
             ul {
                 height: 100%;
                 display: -webkit-flex;
