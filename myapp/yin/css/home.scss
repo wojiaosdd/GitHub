@@ -1,4 +1,4 @@
-            * {
+* {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
@@ -60,7 +60,7 @@ html {
             top: 50%;
             margin-top: -0.8rem;
             -webkit-border-radius: 3px;
-                    border-radius: 3px;
+            border-radius: 3px;
             border: 1px solid rgba(255, 255, 255, 0.5);
         }
         header {
@@ -83,8 +83,8 @@ html {
                 -webkit-box-orient: vertical;
                 -webkit-box-direction: normal;
                 -webkit-flex-direction: column;
-                    -ms-flex-direction: column;
-                        flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
                 li {
                     -webkit-flex: 1;
                     padding: 0.5rem 1rem;
@@ -196,7 +196,7 @@ html {
             display: -webkit-flex;
             padding-top: 0.4rem;
             -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
+            box-sizing: border-box;
             border-bottom: 0.05rem solid #aaa;
             .logo {
                 -webkit-flex: 1;
@@ -209,7 +209,7 @@ html {
                     width: 1.5rem;
                     height: 1.5rem;
                     -webkit-border-radius: 50%;
-                            border-radius: 50%;
+                    border-radius: 50%;
                     text-align: center;
                     line-height: 1.4rem;
                     border: 0.05rem solid #888;
@@ -234,14 +234,14 @@ html {
                 height: 2rem;
                 border: 2px solid #aaa;
                 -webkit-border-radius: 8px;
-                        border-radius: 8px;
+                border-radius: 8px;
                 a {
                     padding: 0.4rem 0 0 0.5rem;
                     width: 100%;
                     height: 100%;
                     display: -webkit-flex;
                     -webkit-box-sizing: border-box;
-                            box-sizing: border-box;
+                    box-sizing: border-box;
                     i {
                         -webkit-flex: 1;
                         height: 1.2rem;
@@ -269,7 +269,7 @@ html {
                     float: left;
                     text-align: center;
                     -webkit-border-radius: 6px;
-                            border-radius: 6px;
+                    border-radius: 6px;
                     &:nth-child(4) {
                         margin: 0.25rem 0 0 0.5rem;
                     }
@@ -360,7 +360,7 @@ html {
                         -o-transition: all 2s;
                         transition: all 2s;
                         -webkit-animation: shangxia 12s infinite linear;
-                                animation: shangxia 12s infinite linear;
+                        animation: shangxia 12s infinite linear;
                         li {
                             color: #fff;
                             &:nth-child(1) {
@@ -383,7 +383,7 @@ html {
                 margin: 0.5rem auto;
                 div {
                     -webkit-border-radius: 6px;
-                            border-radius: 6px;
+                    border-radius: 6px;
                     float: left;
                     text-align: center;
                     .biaoti1 {
@@ -434,22 +434,22 @@ html {
                         left: 0px;
                         top: 0px;
                         -webkit-backface-visibility: hidden;
-                                backface-visibility: hidden;
+                        backface-visibility: hidden;
                         -webkit-transform-style: preserve-3d;
-                                transform-style: preserve-3d;
+                        transform-style: preserve-3d;
                     }
                     .box1 {
                         z-index: 10;
                         background: #2a5caa;
                         -webkit-animation: fangunz 6s infinite linear;
-                                animation: fangunz 6s infinite linear;
+                        animation: fangunz 6s infinite linear;
                     }
                     .box2 {
                         background: #a3cf62;
                         -webkit-transform: rotateX(-180deg);
-                                transform: rotateX(-180deg);
+                        transform: rotateX(-180deg);
                         -webkit-animation: fangunf 6s infinite linear;
-                                animation: fangunf 6s infinite linear;
+                        animation: fangunf 6s infinite linear;
                     }
                 }
                 .nei_bottom_center {
@@ -479,6 +479,7 @@ html {
             }
         }
         footer {
+            border-top: 0.05rem solid #eee;
             position: fixed;
             bottom: 0;
             left: 0;
@@ -518,98 +519,98 @@ html {
     }
 }
 
-    @-webkit-keyframes fangunz {
-        0% {
-            -webkit-transform: rotateX(0deg);
-                    transform: rotateX(0deg)
-        }
-        50% {
-            -webkit-transform: rotateX(180deg);
-                    transform: rotateX(180deg)
-        }
-        100% {
-            -webkit-transform: rotateX(0deg);
-                    transform: rotateX(0deg)
-        }
+@-webkit-keyframes fangunz {
+    0% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg)
     }
+    50% {
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg)
+    }
+    100% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg)
+    }
+}
 
-    @keyframes fangunz {
-        0% {
-            -webkit-transform: rotateX(0deg);
-                    transform: rotateX(0deg)
-        }
-        50% {
-            -webkit-transform: rotateX(180deg);
-                    transform: rotateX(180deg)
-        }
-        100% {
-            -webkit-transform: rotateX(0deg);
-                    transform: rotateX(0deg)
-        }
+@keyframes fangunz {
+    0% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg)
     }
-    
-    @-webkit-keyframes fangunf {
-        0% {
-            -webkit-transform: rotateX(180deg);
-                    transform: rotateX(180deg)
-        }
-        50% {
-            -webkit-transform: rotateX(0deg);
-                    transform: rotateX(0deg)
-        }
-        100% {
-            -webkit-transform: rotateX(180deg);
-                    transform: rotateX(180deg)
-        }
+    50% {
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg)
     }
-    
-    @keyframes fangunf {
-        0% {
-            -webkit-transform: rotateX(180deg);
-                    transform: rotateX(180deg)
-        }
-        50% {
-            -webkit-transform: rotateX(0deg);
-                    transform: rotateX(0deg)
-        }
-        100% {
-            -webkit-transform: rotateX(180deg);
-                    transform: rotateX(180deg)
-        }
+    100% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg)
     }
-    
-    @-webkit-keyframes shangxia {
-        0% {
-            top: 0
-        }
-        25% {
-            top: -3.5rem
-        }
-        50% {
-            top: -3.5rem
-        }
-        75% {
-            top: 0
-        }
-        100% {
-            top: 0
-        }
+}
+
+@-webkit-keyframes fangunf {
+    0% {
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg)
     }
-    
-    @keyframes shangxia {
-        0% {
-            top: 0
-        }
-        25% {
-            top: -3.5rem
-        }
-        50% {
-            top: -3.5rem
-        }
-        75% {
-            top: 0
-        }
-        100% {
-            top: 0
-        }
+    50% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg)
     }
+    100% {
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg)
+    }
+}
+
+@keyframes fangunf {
+    0% {
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg)
+    }
+    50% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg)
+    }
+    100% {
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg)
+    }
+}
+
+@-webkit-keyframes shangxia {
+    0% {
+        top: 0
+    }
+    25% {
+        top: -3.5rem
+    }
+    50% {
+        top: -3.5rem
+    }
+    75% {
+        top: 0
+    }
+    100% {
+        top: 0
+    }
+}
+
+@keyframes shangxia {
+    0% {
+        top: 0
+    }
+    25% {
+        top: -3.5rem
+    }
+    50% {
+        top: -3.5rem
+    }
+    75% {
+        top: 0
+    }
+    100% {
+        top: 0
+    }
+}

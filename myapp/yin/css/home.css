@@ -1,6 +1,6 @@
 * { margin: 0; padding: 0; -webkit-box-sizing: border-box; }
 
-a { -webkit-text-decoration: none; color: #888; }
+a { -webkit-text-decoration: none; text-decoration: none; color: #888; }
 
 i.iconfont { font-size: 1rem; color: #aaa; }
 
@@ -63,7 +63,11 @@ html { width: 16rem; height: 100%; }
 #all #all_right section .nei_top .nei_top_center .huodong2 .iconfont { font-size: 2rem; color: red; }
 #all #all_right section .nei_top .nei_top_center .biaoti1 { height: auto; -webkit-flex: 4; padding-left: 0.3rem; font-size: 0.8rem; font-weight: bold; }
 #all #all_right section .nei_top .nei_top_little1 { padding-top: 0.25rem; margin: 0.25rem 0 0 0.25rem; background: rgba(0, 154, 214, 0.9); width: 3.5rem; height: 3.5rem; }
-#all #all_right section .nei_top .nei_top_little2 { padding-top: 0.25rem; margin: 0.25rem 0 0 0.25rem; background: #7fb80e; width: 3.5rem; height: 3.5rem; }
+#all #all_right section .nei_top .nei_top_little2 { padding-top: 0.25rem; margin: 0.25rem 0 0 0.25rem; background: none; width: 3.5rem; height: 3.5rem; overflow: hidden; position: relative; top: 0; left: 0; }
+#all #all_right section .nei_top .nei_top_little2 .nei_top_little2_ul { height: 7rem; width: 100%; position: absolute; top: 0px; left: 0; -webkit-transition: all 2s; -o-transition: all 2s; transition: all 2s; -webkit-animation: shangxia 12s infinite linear; animation: shangxia 12s infinite linear; }
+#all #all_right section .nei_top .nei_top_little2 .nei_top_little2_ul li { color: #fff; }
+#all #all_right section .nei_top .nei_top_little2 .nei_top_little2_ul li:nth-child(1) { background: #fa2800; width: 100%; height: 3.5rem; }
+#all #all_right section .nei_top .nei_top_little2 .nei_top_little2_ul li:nth-child(2) { background: #7fb80e; height: 3.5rem; width: 100%; }
 #all #all_right section .nei_bottom { width: 15.5rem; height: 7.5rem; margin: 0.5rem auto; }
 #all #all_right section .nei_bottom div { -webkit-border-radius: 6px; border-radius: 6px; float: left; text-align: center; }
 #all #all_right section .nei_bottom div .biaoti1 { margin: 0.45rem 0; height: 1.2rem; width: 100%; font-size: 0.8rem; color: white; font-weight: bold; text-align: center; line-height: 1.2rem; }
@@ -71,16 +75,44 @@ html { width: 16rem; height: 100%; }
 #all #all_right section .nei_bottom div .biaoti2 { margin: 0.25rem 0; font-size: 0.8rem; color: white; font-size: bold; }
 #all #all_right section .nei_bottom div .huodong2 { padding-top: 0.25rem; }
 #all #all_right section .nei_bottom div .huodong2 .iconfont { font-size: 1.5rem; color: white; }
-#all #all_right section .nei_bottom .nei_bottom_big { margin: 0  0.125rem 0; background: rgba(0, 83, 68, 0.7); width: 7.5rem; height: 7.5rem; }
+#all #all_right section .nei_bottom .nei_bottom_big { position: relative; background: none; margin: 0 0.125rem 0; width: 7.5rem; height: 7.5rem; }
+#all #all_right section .nei_bottom .nei_bottom_big div { width: 100%; height: 100%; margin: 0; position: absolute; -webkit-transition: all 2s; -o-transition: all 2s; transition: all 2s; left: 0px; top: 0px; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transform-style: preserve-3d; transform-style: preserve-3d; }
+#all #all_right section .nei_bottom .nei_bottom_big .box1 { z-index: 10; background: #2a5caa; -webkit-animation: fangunz 6s infinite linear; animation: fangunz 6s infinite linear; }
+#all #all_right section .nei_bottom .nei_bottom_big .box2 { background: #a3cf62; -webkit-transform: rotateX(-180deg); transform: rotateX(-180deg); -webkit-animation: fangunf 6s infinite linear; animation: fangunf 6s infinite linear; }
 #all #all_right section .nei_bottom .nei_bottom_center { margin-right: 0.25rem; width: 3.75rem; height: 7.5rem; background: rgba(245, 143, 152, 0.7); }
 #all #all_right section .nei_bottom .nei_bottom_center .huodong2 .iconfont { font-size: 2.1rem; color: #fffef9; }
 #all #all_right section .nei_bottom .nei_bottom_little1 { background: gold; width: 3.5rem; height: 3.5rem; margin: 0 0 0.25rem 0.25rem; }
 #all #all_right section .nei_bottom .nei_bottom_little2 { margin: 0.25rem 0 0 0.25rem; background: rgba(237, 15, 148, 0.9); width: 3.5rem; height: 3.5rem; }
-#all #all_right footer { position: fixed; bottom: 0; left: 0; width: 100%; height: auto; background: white; z-index: 999; }
+#all #all_right footer { border-top: 0.05rem solid #eee; position: fixed; bottom: 0; left: 0; width: 100%; height: auto; background: white; z-index: 999; }
 #all #all_right footer ul { height: 100%; display: -webkit-flex; }
-#all #all_right footer ul li { -webkit-flex: 1; height: 100%; padding: 0.25rem 0; -webkit-box-shadow: 0 0 1px 1px #ddd inset; box-shadow: 0 0 1px 1px #ddd inset; }
+#all #all_right footer ul li { -webkit-flex: 1; height: 100%; padding: 0.25rem 0; }
 #all #all_right footer ul li:nth-child(3) { background: rgba(0, 0, 0, 0.8); color: rgba(255, 255, 255, 0.7); }
 #all #all_right footer ul li a { text-align: center; }
 #all #all_right footer ul li a .zi { font-size: 0.8rem; }
 #all #all_right footer ul li a span { display: inline-block; width: 100%; margin-top: 0.05rem; font-size: 0.8rem; }
 #all #all_right footer ul li a span i { font-size: 1.2rem; }
+
+@-webkit-keyframes fangunz { 0% { -webkit-transform: rotateX(0deg); transform: rotateX(0deg); }
+  50% { -webkit-transform: rotateX(180deg); transform: rotateX(180deg); }
+  100% { -webkit-transform: rotateX(0deg); transform: rotateX(0deg); } }
+@keyframes fangunz { 0% { -webkit-transform: rotateX(0deg); transform: rotateX(0deg); }
+  50% { -webkit-transform: rotateX(180deg); transform: rotateX(180deg); }
+  100% { -webkit-transform: rotateX(0deg); transform: rotateX(0deg); } }
+@-webkit-keyframes fangunf { 0% { -webkit-transform: rotateX(180deg); transform: rotateX(180deg); }
+  50% { -webkit-transform: rotateX(0deg); transform: rotateX(0deg); }
+  100% { -webkit-transform: rotateX(180deg); transform: rotateX(180deg); } }
+@keyframes fangunf { 0% { -webkit-transform: rotateX(180deg); transform: rotateX(180deg); }
+  50% { -webkit-transform: rotateX(0deg); transform: rotateX(0deg); }
+  100% { -webkit-transform: rotateX(180deg); transform: rotateX(180deg); } }
+@-webkit-keyframes shangxia { 0% { top: 0; }
+  25% { top: -3.5rem; }
+  50% { top: -3.5rem; }
+  75% { top: 0; }
+  100% { top: 0; } }
+@keyframes shangxia { 0% { top: 0; }
+  25% { top: -3.5rem; }
+  50% { top: -3.5rem; }
+  75% { top: 0; }
+  100% { top: 0; } }
+
+/*# sourceMappingURL=home.css.map */
