@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>搜索</title>
+    <link rel="stylesheet" type="text/css" href="css/sousou.css"/>
+	<link rel="stylesheet" type="text/css" href="myfont/font_3l2h3uy7wopqfr/iconfont.css"/>
+	<script src="js/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+		document.documentElement.style.fontSize=innerWidth/16+"px";
+	</script>
+    
+	<script>
+     $(function(){
+     	
+     	$("#txt").keyup(function(){
+     		$("#show ").html("");
+     		if($(this).val()!=""){
+         $.getJSON("https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd="+$(this).val()+"&cb=?"
+         ,function(data){
+
+     		       var datas=data.s;
+     		       $.each(datas,function(index,ele){
+//   		       	console.log(ele);
+     		       	$("<li>").html(ele).click(function(){
+     		       		$("#txt").val(ele);
+     		       	}).appendTo($("#show"));
+     		       	
+     		       })
+
+     			})
+     		}
+     	})
+     })
+
+	</script>
+</head>
+<body>
+	<div class="all">
+		<div class="sousou">
+			<span class="fanhui">
+				<i class="iconfont icon-back"></i>
+			</span>
+			<p class="fdj">
+				<i class="iconfont icon-search"></i>
+				<input type="text" id="txt">
+			</p>
+			<input type="submit" name="but" id="but" value="搜搜" />
+		</div>
+		
+		<div class="show_div">
+			<ul id="show">
+			</ul>
+		</div>
+	</div>
+	<footer>
+				<ul>
+					<li>
+						<a href="#">
+							<span><i class="iconfont icon-search"></i></span>
+							<span class="zi">搜索</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span><i class="iconfont icon-shouye3"></i></span>
+							<span class="zi">我的</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+
+							<span><i class="iconfont icon-shouye1"></i></span>
+							<span class="zi">主页</span>
+
+						</a>
+					</li>
+
+					<li>
+						<a href="#">
+
+							<span><i class="iconfont icon-shouye4"></i></span>
+							<span class="zi">商城</span>
+
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span><i class="iconfont icon-shouye8"></i></span>
+							<span class="zi">设置</span>
+						</a>
+					</li>
+				</ul>
+			</footer>
+</body>
+</html>

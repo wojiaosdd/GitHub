@@ -1,0 +1,64 @@
+<html>
+<head>
+	<meta charset="utf-8">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>倒计时测试</title>
+</head>
+<body>
+<SCRIPT type="text/javascript"><!--
+var target = []
+var time_id = []
+
+function show() {
+	setTimeout("show()", 1000);
+	for(var i = 0, j = target.length; i < j; i++) { //可以扩展为多个倒计时应用
+		today = new Date();
+		timeold = target[i] - today.getTime(); //当前时间和倒计时时间之间的毫秒差
+		sectimeold = timeold / 1000; //将毫秒差转换为秒
+		secondsold = Math.floor(sectimeold); //取整秒数
+		msPerDay = 24 * 60 * 60 * 1000; //定义一天有多少秒
+		e_daysold = timeold / msPerDay; //将秒转换为天
+		daysold = Math.floor(e_daysold); //取整天数
+		e_hrsold = (e_daysold - daysold) * 24; //取不足一天的时间转换为小时数
+		hrsold = Math.floor(e_hrsold); //取整数（小时）
+		e_minsold = (e_hrsold - hrsold) * 60; //取不足一小时的时间转换为分
+		minsold = Math.floor(e_minsold); //取整数（分）
+		e_secoold = (e_minsold - minsold) * 60; //取不足一小时的时间转换为秒
+		seconds = Math.floor(e_secoold); //取整数（秒）
+		if(daysold < 0) {
+			document.getElementByIdx_x_x(time_id[i]).innerHTML = "<font color=red>正在抽奖中……</font>";
+		} else {
+			if(daysold < 10) {
+				daysold = "0" + daysold
+			}
+			//if (daysold<100) {daysold="0"+daysold}
+			if(hrsold < 10) {
+				hrsold = "0" + hrsold
+			}
+			if(minsold < 10) {
+				minsold = "0" + minsold
+			}
+			if(seconds < 10) {
+				seconds = "0" + seconds
+			}
+			if(daysold < 3) {
+				document.getElementByIdx_x_x(time_id[i]).innerHTML = "<font color=red>" + daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒</font>";
+			} else {
+				document.getElementByIdx_x_x(time_id[i]).innerHTML = daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+			}
+		}
+	}
+}
+setTimeout("show()", 1);
+//--></SCRIPT>
+距抽奖还有：
+<div id="ti" style="border:1px solid black;margin:5px;padding:2px;width:180px"></div>
+<SCRIPT>//设定目标时间(数组元素)
+//target[target.length]=new Date(年,月-1,日,时,分,秒).getTime()
+target[target.length] = new Date(2010, 8, 21, 12, 00, 00).getTime();
+//设定倒计时显示地址(数组元素)
+time_id[time_id.length] = "ti"</SCRIPT>
+</body>
+</html>
