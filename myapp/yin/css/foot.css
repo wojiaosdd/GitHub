@@ -34,11 +34,9 @@ footer .foot { width: 14rem; margin: 0 auto; padding-top: 0.5rem; border-top: 0.
 footer .foot ul { width: 100%; height: 100%; display: -webkit-flex; }
 footer .foot ul li { -webkit-flex: 1; }
 footer .foot ul li a i { font-size: 1.8rem; }
-footer .foot .other { position: absolute; top: -0.5rem; left: 50%; margin-left: -2rem; display: inline-block; width: 4rem; height: 1rem; color: #fff; line-height: 1rem; font-size: 0.6rem; text-align: center; background: rgba(255, 255, 255, 0.3); z-index: 1000; border-radius: 8px; }
+footer .foot .other { position: absolute; top: -0.5rem; left: 50%; margin-left: -2rem; display: inline-block; width: 4rem; height: 1rem; color: #fff; line-height: 1rem; font-size: 0.6rem; text-align: center; background: rgba(255, 255, 255, 0.3); z-index: 1000; -webkit-border-radius: 8px; border-radius: 8px; }
 
 .container { width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 0; }
-.container .banner { width: 100%; height: 100%; display: -webkit-flex; transition: transform 1s; }
+.container .banner { width: 100%; height: 100%; display: -webkit-flex; -webkit-transition: -webkit-transform 1s; transition: -webkit-transform 1s; -o-transition: transform 1s; transition: transform 1s; transition: transform 1s, -webkit-transform 1s; }
 .container .banner li { width: 100%; height: 100%; -webkit-flex-shrink: 0; }
 .container .banner li img { width: 100%; height: 100%; }
-
-/*# sourceMappingURL=foot.css.map */
