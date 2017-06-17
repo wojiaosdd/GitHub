@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/kaitou.css"/>
+		<script src="js/zepto.min.js"></script>
+		<script type="text/javascript">
+			document.documentElement.style.fontSize=innerWidth/16+"px";
+		</script>
+		<title>C T</title>
+	</head>
+	<body>
+		<div id="one">
+				<ul class="nei" id="list">
+					<li><p>吃货的福音</p></li>
+					<li><p>完美的低脂配方</p></li>
+					<li><p>不！我们还要更多...</p></li>
+					<li><p><a href="https://wojiaosdd.github.io/GitHub/myapp/yin/home.html">点击这里 开始体验之旅 GO!</a></p></li>
+				</ul>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+
+$(function(){
+	console.log($("#one"));
+	var n=0;
+	var size=$("#list").find("li").size();
+	console.log(size);
+	var w=$(window).width();
+	console.log(w);
+	$("#one").on("swipeLeft",function(){
+		n++;
+		if(n>=size){
+			n=size-1;
+		}
+		$("#list").css("-webkit-transform","translate3d("+(-n*w)+"px,0,0)");
+		
+	})
+	})
+
+</script>
