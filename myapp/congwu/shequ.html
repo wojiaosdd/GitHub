@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/foot.css"/>
+		<link rel="stylesheet" type="text/css" href="cw/font_88yeuyfl3jdfs9k9/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shequ.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css" />
+		<script src="js/swiper-3.4.2.min.js"></script>
+		<script src="js/zepto.min.js"></script>
+		<script type="text/javascript">
+			document.documentElement.style.fontSize=innerWidth/16+"px";
+		</script>
+		<title>社区</title>
+	</head>
+	<body>
+		<header>
+			<nav class="nav">
+				<ul class="nav_ul" id="nav_ul">
+					<li></li>
+					<li class="name">
+						<span>精选</span>
+					</li>
+					<li class="name">
+						<span>动态</span>
+					</li>
+					<li class="name">
+						<span>频道</span>
+					</li>
+					<li></li>
+				</ul>
+			</nav>
+		</header>
+<section>
+  <div id="all">
+	<ul class="nei_ul" id="nei_ul">
+		<li class="nei_ul_li">
+			<!--<精品>-->
+			<div id="jingxuan">
+				<div class="container" id="lbt">
+					<ul class="swiper-wrapper banner" id="lbt_ul">
+						<li class="swiper-slide">
+							<a href=""><img src="img/lbt1.jpg" alt="" /></a>
+						</li>
+						<li class="swiper-slide">
+							<a href=""><img src="img/lbt2.jpg" alt="" /></a>
+						</li>
+						<li class="swiper-slide">
+							<a href=""><img src="img/lbt3.jpg" alt="" /></a>
+						</li>
+					</ul>
+					<div class="swiper-pagination"></div>
+				</div>
+				<ul class="jignxuan_ul" id="jignxuan_ul">
+					<li>
+                        <div class="jingxuan_div1">
+                        	<img src="img/cat1.jpg" class="touxiang"/>
+                        	<span class="user">微微</span>
+                        	<span class="address">广东 广州</span>
+                        	<button><i class="iconfont icon-shizi"></i>关注</button>
+                        	<div class="zhanshi">
+                        		<div class="zhanshi_img">
+                        			<img src="img/dog1.jpg"/>
+                        		</div>
+                        		<p class="shuoshuo">终于和女神握手了</p>
+                        		<div class="dianZanTouXiang">
+                        			<img src="img/cat1.jpg" id="myselft"/><span class="yizan">已赞</span>
+                        		</div>
+                        		<div class="dianzan">
+                        			<i class="iconfont icon-aixin"></i>
+                        			<span class="dianzan_span">点赞</span>
+                        		</div>
+                        		<div class="songli">
+                        			<i class="iconfont icon-liwu"></i>送礼
+                        		</div>
+                        		<a href="" class="pingjia">
+                        			<i class="iconfont icon-daipinglun"></i>评论
+                        		</a>
+                        	</div>
+
+					</li>
+				</ul>
+			</div>
+		</li>
+		<li class="nei_ul_li">
+			<ul id="dongtai">
+				<li>22</li>
+			</ul>
+		</li>
+		<li class="nei_ul_li">
+			<ul id="pindao">
+				<li>33</li>
+			</ul>
+		</li>
+	</ul>
+</section>
+		<footer>
+			<div class="bottom_nav">
+				<ul class="bottom_nav_ul">
+					<li style="background-color:#aaa;">
+						<a href="">
+							<i class="iconfont icon-xuexiao"></i>
+							<span class="zi">社区</span>
+						</a>
+					</li>	
+					<li>
+						<a href="">
+							<i class="iconfont icon-zixun"></i>
+							<span class="zi">资讯</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="iconfont icon-shangjia">
+								
+							</i><span class="zi">商城</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="iconfont icon-fuwu"></i>
+							<span class="zi">服务</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="iconfont icon-geren"></i>
+							<span class="zi">我的</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer></div>
+	</body>
+</html>
+<script type="text/javascript">//	l轮播图
+var s = new Swiper(".container", {
+	pagination: ".swiper-pagination",
+	autoplay: "3000",
+	autoplayDisableOnInteraction: false,
+
+}) //  <轮播图>
+
+//3个内容页面
+$(function() {
+	var n = 0;
+	var size = $("#nei_ul").find(".nei_ul_li").size();
+	var w = $(window).width();
+	console.log(size);
+	$("#all").on("swipeLeft", function() {
+		n++;
+		console.log(n)
+		if(n > size) {
+			n = size-1;
+			
+		}
+			
+		$("#nei_ul").css("-webkit-transform", "translate3d(" + (-n * w) + "px,0,0)");
+		$(".name").eq(n).addClass("tapli").siblings().removeClass("tapli");
+	});
+	
+	$("#all").on("swipeRight", function() {
+		n=0;
+		n--;
+
+		if(n < 1) {
+			n = 0;
+		}
+		$("#nei_ul").css("-webkit-transform", "translate3d(" + (-n * w) + "px,0,0)")
+		$(".name").eq(n).addClass("tapli").siblings().removeClass("tapli");
+	});
+
+// console.log($(".name"))
+    $(".name").eq(0).addClass("tapli");
+	$(".name").on("tap",function(){
+		$(this).addClass("tapli").siblings().removeClass("tapli");
+		
+		var idx=$(this).index()-1;
+		$("#nei_ul").css("-webkit-transform", "translate3d(" + (-idx* w) + "px,0,0)")
+	});
+	//3个内容页面
+	//精选里的内容
+	    var sss= $("#jianagxuan_ul").find(".dianzan");
+	    $(".dianzan").on("tap",function(){
+	    	$(this).find(".iconfont").css("color","red");
+	    	console.log($(this).parent().find(".dianZanTouXiang"));
+	    	$("#myselft").css("display","block")
+	    	$(this).parent().find(".dianZanTouXiang").append($("#myselft"));
+	    	$(this).find(".dianzan_span").html("已赞");
+	    })
+//	    console.log($("#myselft"))
+	//精选里的内容
+})
+</script>

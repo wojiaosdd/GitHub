@@ -1,0 +1,225 @@
+
+    nav{
+        #nav_ul{
+            li{
+                span{
+                    color: white;
+                }
+                &.tapli{
+                    span{
+                        color:greenyellow;
+                       
+                    }
+                     border-bottom: 0.1rem solid white;
+                }
+            }
+        }
+    }
+#myselft{
+    display: none;
+}
+section {
+    width: 100%;
+    height:auto;
+    overflow-y: auto;
+    padding-top: 2rem;
+    padding-bottom:3rem ;
+    .nei_ul {
+        height: auto;
+        width:48rem;
+        display: -webkit-flex;
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s;
+        .nei_ul_li {
+            -webkit-flex: 1;
+            overflow: hidden;
+            #jingxuan{
+                width: 100%;
+                height: 100%;
+                #lbt {
+                    -webkit-flex:1;
+                    width: 15rem;
+                    height: 10rem;
+                    margin: 0.2rem 0.5rem;
+                    overflow: hidden;
+                    position: relative;
+                    #lbt_ul {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 45rem;
+                        height: 10rem;
+                        overflow: hidden;
+                        li {
+                            width: 15rem;
+                            height: 10rem;
+                            float: left;
+                            overflow: hidden;
+                            a {
+                                width: 100%;
+                                height: auto;
+                                img {
+                                    display: block;
+                                    width: 15rem;
+                                    height: 10rem;
+                                }
+                            }
+                        }
+                    }
+                    .swiper-pagination {
+                        span {
+                            width: 0.4rem;
+                            height: 0.4rem;
+                        }
+                    }
+                }
+                .jignxuan_ul{
+                    margin-top:0.5rem ;
+                    li{
+                        .jingxuan_div1{
+                            padding: 0.1rem 0.5rem;
+                            .touxiang{
+                                display: inline-block;
+                                width: 1.5rem;
+                                height: 1.5rem;
+                                -webkit-border-radius:50% ;
+                                        border-radius:50% ;
+                                float: left;
+                            }
+                            .user{
+                                margin-left: 0.1rem;
+                                font-size: 0.6rem;
+                                color: red;
+                                float: left;
+                                
+                            }
+                            .address{
+                                font-size: 0.6rem;
+                                color: #888;
+                                float: left;
+                            }
+                            button{
+                                -webkit-border-radius: 5px;
+                                        border-radius: 5px;
+                                padding: 0.25rem;
+                                color: red;
+                                font-size: 0.6rem;
+                                float: right;
+                                background: white;
+                                border: 0.05rem solid rgba(237,110,61,1);
+                                .iconfont{
+                                    font-size: 0.6rem;
+                                    color: red;
+                                }
+                            }
+                            .zhanshi{
+                                width: 100%;
+                                height: auto;
+                                    .zhanshi_img{
+                                        width: 15rem;
+                                        height:14rem;
+                                        overflow: hidden;
+                                        padding-top: 0.5rem;
+                                        img{
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                    }
+                                    .shuoshuo{
+                                        width:100%;
+                                        height: 1.5rem;
+                                        font-size: 0.6rem;
+                                        overflow: hidden;
+                                        -o-text-overflow: ellipsis;
+                                           text-overflow: ellipsis;
+                                        white-space: nowrap;
+                                    }
+                                    .dianZanTouXiang{
+                                        width:100%;
+                                        height:1.5rem;
+                                        margin: 0.1rem 0;
+                                        img{
+                                            float: left;
+                                            width: 1.5rem;
+                                            height: 1.5rem;
+                                            -webkit-border-radius:50% ;
+                                                    border-radius:50% ;
+                                        }
+                                        .yizan{
+                                            float: right;
+                                            color: #888;
+                                            font-size: 0.6rem; 
+                                            border: 1px solid #888;
+                                        }
+                                    }
+                                    .dianzan{
+                                        float: left;
+                                        border: 1px solid #888;
+                                        -webkit-border-radius: 5px;
+                                                border-radius: 5px;
+                                        width: 2.2rem;
+                                        height: auto;
+                                        margin: 0.2rem;
+                                        padding: 0.1rem;
+                                       
+                                        .iconfont{
+                                            font-size: 0.6rem;
+                                            float: left;
+                                        }
+                                        .dianzan_span{
+                                            float: left;
+                                            color: #888;
+                                            font-size: 0.6rem; 
+                                            
+                                        }
+                                        
+                                    }
+                                    .songli{
+                                        float: left;
+                                        border: 1px solid #888;
+                                        -webkit-border-radius: 5px;
+                                                border-radius: 5px;
+                                        width: 2.2rem;
+                                        height: auto;
+                                        margin: 0.2rem;
+                                        padding: 0.1rem;
+                                        color: #888;
+                                        font-size: 0.6rem;
+                                        .iconfont{
+                                            font-size: 0.6rem
+                                        }
+                                    }
+                                    .pingjia{
+                                        float: left;
+                                        border: 1px solid #888;
+                                        -webkit-border-radius: 5px;
+                                                border-radius: 5px;
+                                        padding-top: 0.1rem;
+                                        width: 2.2rem;
+                                        height: auto;
+                                        margin: 0.2rem;
+                                        padding: 0.1rem;
+                                        color: #888;
+                                        font-size: 0.6rem;
+                                        .iconfont{
+                                            font-size: 0.6rem
+                                        }
+                                    }
+                                }
+                            
+                        }
+                    }
+                }
+            }
+            #dongtai {
+                background: red;
+                li {}
+            }
+            #pindao {
+                background: blue;
+                li {}
+            }
+        }
+    }
+}
