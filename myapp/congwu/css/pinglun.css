@@ -1,0 +1,31 @@
+body { background: #eee; }
+
+section { width: 100%; height: auto; overflow-y: auto; padding-top: 2.2rem; }
+section .jingxuan_div1 { position: relative; padding: 0.1rem 0.5rem; background: #fff; margin-bottom: 0.5rem; }
+section .jingxuan_div1 .touxiang { display: inline-block; width: 1.5rem; height: 1.5rem; -webkit-border-radius: 50%; border-radius: 50%; float: left; }
+section .jingxuan_div1 .user { margin-left: 0.1rem; font-size: 0.6rem; color: red; float: left; }
+section .jingxuan_div1 .address { font-size: 0.6rem; color: #888; float: left; }
+section .jingxuan_div1 button { -webkit-border-radius: 5px; border-radius: 5px; padding: 0.25rem; color: red; font-size: 0.6rem; float: right; background: white; border: 0.05rem solid #ed6e3d; }
+section .jingxuan_div1 button .iconfont { font-size: 0.6rem; color: red; }
+section .jingxuan_div1 .zhanshi { width: 100%; height: auto; }
+section .jingxuan_div1 .zhanshi .zhanshi_img { width: 15rem; height: 14rem; overflow: hidden; padding-top: 0.5rem; }
+section .jingxuan_div1 .zhanshi .zhanshi_img img { width: 100%; height: 100%; }
+section .jingxuan_div1 .zhanshi .shuoshuo { width: 100%; height: 1.5rem; font-size: 0.7rem; overflow: hidden; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; }
+section .jingxuan_div1 .zhanshi .dianZanTouXiang { width: 100%; height: 1.5rem; margin: 0.1rem 0; }
+section .jingxuan_div1 .zhanshi .dianZanTouXiang img { float: left; width: 1.5rem; height: 1.5rem; -webkit-border-radius: 50%; border-radius: 50%; }
+section .jingxuan_div1 .zhanshi .dianZanTouXiang .yizan { float: right; color: #888; font-size: 0.6rem; border: 1px solid #888; }
+section .jingxuan_div1 .zhanshi .dianzan { position: absolute; right: 3rem; bottom: 0.3rem; padding-top: 0.1rem; width: 2.2rem; height: auto; padding-left: 0.1rem; color: #888; font-size: 0.6rem; }
+section .jingxuan_div1 .zhanshi .dianzan .iconfont { font-size: 0.6rem; }
+section .jingxuan_div1 .zhanshi .dianzan .dianzan_span { color: #888; font-size: 0.6rem; }
+section .jingxuan_div1 .zhanshi .pingjia_div { position: absolute; right: 0.5rem; bottom: 0.3rem; padding-top: 0.1rem; width: 2.2rem; height: auto; color: #888; font-size: 0.6rem; }
+section .jingxuan_div1 .zhanshi .pingjia_div .iconfont { font-size: 0.6rem; }
+section .jingxuan_div1 .zhanshi .pingjia_div .pingjia_span { font-size: 0.6rem; }
+section .show { width: 100%; height: auto; background: #fff; }
+section .show .show_ul { width: 100%; height: 100%; }
+section .show .show_ul li { position: relative; width: 100%; height: 2.2rem; padding: 0.5rem 0.5rem 0 0.5rem; border-bottom: 1px solid #aaa; }
+section .show .show_ul li .touxiang_img { float: left; width: 1.5rem; height: 1.5rem; -webkit-border-radius: 50%; border-radius: 50%; margin-right: 0.4rem; }
+section .show .show_ul li .name { position: absolute; top: 0.2rem; font-size: 0.7rem; }
+section .show .show_ul li .shuru { float: left; font-size: 0.7rem; position: absolute; top: 1.2rem; color: #AAAAAA; }
+section .show .show_ul li .time { float: right; font-size: 0.7rem; margin-right: 0.5rem; color: red; }
+
+/*# sourceMappingURL=pinglun.css.map */

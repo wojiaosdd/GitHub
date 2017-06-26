@@ -1,0 +1,167 @@
+body {
+    background: #eee;
+}
+
+section {
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+    padding-top: 2.2rem;
+    
+    .jingxuan_div1 {
+        position: relative;
+        padding: 0.1rem 0.5rem;
+        background: #fff;
+        margin-bottom: 0.5rem;
+        .touxiang {
+            display: inline-block;
+            width: 1.5rem;
+            height: 1.5rem;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            float: left;
+        }
+        .user {
+            margin-left: 0.1rem;
+            font-size: 0.6rem;
+            color: red;
+            float: left;
+        }
+        .address {
+            font-size: 0.6rem;
+            color: #888;
+            float: left;
+        }
+        button {
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            padding: 0.25rem;
+            color: red;
+            font-size: 0.6rem;
+            float: right;
+            background: white;
+            border: 0.05rem solid rgba(237, 110, 61, 1);
+            .iconfont {
+                font-size: 0.6rem;
+                color: red;
+            }
+        }
+        .zhanshi {
+            width: 100%;
+            height: auto;
+            .zhanshi_img {
+                width: 15rem;
+                height: 14rem;
+                overflow: hidden;
+                padding-top: 0.5rem;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .shuoshuo {
+                width: 100%;
+                height: 1.5rem;
+                font-size: 0.7rem;
+                overflow: hidden;
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .dianZanTouXiang {
+                width: 100%;
+                height: 1.5rem;
+                margin: 0.1rem 0;
+                img {
+                    float: left;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    -webkit-border-radius: 50%;
+                    border-radius: 50%;
+                }
+                .yizan {
+                    float: right;
+                    color: #888;
+                    font-size: 0.6rem;
+                    border: 1px solid #888;
+                }
+            }
+            .dianzan {
+                position: absolute;
+                right: 3rem;
+                bottom: 0.3rem;
+                padding-top: 0.1rem;
+                width: 2.2rem;
+                height: auto;
+                padding-left: 0.1rem;
+                color: #888;
+                font-size: 0.6rem;
+                .iconfont {
+                    font-size: 0.6rem;
+                }
+                .dianzan_span {
+                    color: #888;
+                    font-size: 0.6rem;
+                }
+            }
+            .pingjia_div {
+                position: absolute;
+                right: 0.5rem;
+                bottom: 0.3rem;
+                padding-top: 0.1rem;
+                width: 2.2rem;
+                height: auto;
+                color: #888;
+                font-size: 0.6rem;
+                .iconfont {
+                    font-size: 0.6rem
+                }
+                .pingjia_span {
+                    font-size: 0.6rem
+                }
+            }
+        }
+    }
+    .show {
+        width: 100%;
+        height: auto;
+        background: #fff;
+        .show_ul {
+            width: 100%;
+            height: 100%;
+            li {
+                position: relative;
+                width: 100%;
+                height: 2.2rem;
+                padding: 0.5rem 0.5rem 0 0.5rem;
+                border-bottom: 1px solid #aaa;
+                .touxiang_img {
+                    float: left;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    -webkit-border-radius: 50%;
+                    border-radius: 50%;
+                    margin-right: 0.4rem;
+                }
+                .name {
+                    position: absolute;
+                    top: 0.2rem;
+                    font-size: 0.7rem;
+                }
+                .shuru {
+                    float: left;
+                    font-size: 0.7rem;
+                    position: absolute;
+                    top: 1.2rem;
+                    color: #AAAAAA;
+                }
+                .time {
+                    float: right;
+                    font-size: 0.7rem;
+                    margin-right: 0.5rem;
+                    color: red;
+                }
+            }
+        }
+    }
+}

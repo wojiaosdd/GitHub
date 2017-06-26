@@ -1,0 +1,98 @@
+body {
+    position: relative;
+}
+
+section {
+    padding: 2.2rem 0 3rem;
+    width: 100%;
+    position: absolute;
+    .tuijian {
+        width: 100%;
+        float: left;
+        #lbt {
+            width: 15rem;
+            height: 10rem;
+            margin: 0.4rem 0.5rem;
+            overflow: hidden;
+            position: relative;
+            #lbt_ul {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width:75rem;
+                height: 10rem;
+                overflow: hidden;
+                li {
+                    width: 15rem;
+                    height: 10rem;
+                    float: left;
+                    overflow: hidden;
+                    a {
+                        width: 100%;
+                        height: auto;
+                        img {
+                            display: block;
+                            width: 15rem;
+                            height: 10rem;
+                        }
+                    }
+                }
+            }
+            .swiper-pagination {
+                span {
+                    width: 0.4rem;
+                    height: 0.4rem;
+                }
+            }
+        }
+        .nei_ul {
+            width: 100%;
+            height:100%;
+            padding: 0.2rem 0.5rem;
+            border-top: 1px dashed #ddd;
+            li {
+                width: 100%;
+                height: 5rem;
+                padding: 0.4rem;
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    .title {
+                        float: left;
+                        font-size: 0.8rem;
+                        width: 8rem;
+                        height: 3.6rem;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        -o-text-overflow: ellipsis;
+                           text-overflow: ellipsis;
+                    }
+                    .tupian {
+                        float: right;
+                        width: 4rem;
+                        height: 4rem;
+                    }
+                    .zuozhe {
+                        position: absolute;
+                        font-size: 0.6rem;
+                        left: 0;
+                        bottom: 0.1rem;
+                        width: 6rem;
+                        height: auto;
+                    }
+                    .liulan {
+                        position: absolute;
+                        font-size: 0.6rem;
+                        right: 1rem;
+                        bottom: 0.1rem;
+                        width: 6rem;
+                        height: auto;
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+    }
+}

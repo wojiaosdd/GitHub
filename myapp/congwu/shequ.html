@@ -15,27 +15,10 @@
 		<title>社区</title>
 	</head>
 	<body>
-		<header>
-			<nav class="nav">
-				<ul class="nav_ul" id="nav_ul">
-					<li></li>
-					<li class="name">
-						<span>精选</span>
-					</li>
-					<li class="name">
-						<span>动态</span>
-					</li>
-					<li class="name">
-						<span>频道</span>
-					</li>
-					<li></li>
-				</ul>
-			</nav>
-		</header>
-<section>
-  <div id="all">
-	<ul class="nei_ul" id="nei_ul">
-		<li class="nei_ul_li">
+		<div id="all">
+		<header>动&nbsp;态</header>
+        <section>
+
 			<!--<精品>-->
 			<div id="jingxuan">
 				<div class="container" id="lbt">
@@ -65,7 +48,7 @@
                         		</div>
                         		<p class="shuoshuo">终于和女神握手了</p>
                         		<div class="dianZanTouXiang">
-                        			<img src="img/cat1.jpg" id="myselft"/><span class="yizan">已赞</span>
+                        			<img src="img/cat1.jpg" id="myselft"/><img src="img/dog3.jpg" /><img src="img/cat2.jpg" /><span class="yizan">已赞</span>
                         		</div>
                         		<div class="dianzan">
                         			<i class="iconfont icon-aixin"></i>
@@ -78,23 +61,38 @@
                         			<i class="iconfont icon-daipinglun"></i>评论
                         		</a>
                         	</div>
-
+                        </div>
+					</li>
+					<li>
+                        <div class="jingxuan_div1">
+                        	<img src="img/cat1.jpg" class="touxiang"/>
+                        	<span class="user">小尹</span>
+                        	<span class="address">湖南 长沙</span>
+                        	<button><i class="iconfont icon-shizi"></i>关注</button>
+                        	<div class="zhanshi">
+                        		<div class="zhanshi_img">
+                        			<img src="img/dog3.jpg"/>
+                        		</div>
+                        		<p class="shuoshuo">像不像文艺青年</p>
+                        		<div class="dianZanTouXiang">
+                        			<img src="img/cat1.jpg" id="myselft"/><img src="img/dog3.jpg" /><img src="img/cat2.jpg" /><span class="yizan">已赞</span>
+                        		</div>
+                        		<div class="dianzan">
+                        			<i class="iconfont icon-aixin"></i>
+                        			<span class="dianzan_span">点赞</span>
+                        		</div>
+                        		<div class="songli">
+                        			<i class="iconfont icon-liwu"></i>送礼
+                        		</div>
+                        		<a href="" class="pingjia">
+                        			<i class="iconfont icon-daipinglun"></i>评论
+                        		</a>
+                        	</div>
+                        </div>
 					</li>
 				</ul>
 			</div>
-		</li>
-		<li class="nei_ul_li">
-			<ul id="dongtai">
-				<li>22</li>
-			</ul>
-		</li>
-		<li class="nei_ul_li">
-			<ul id="pindao">
-				<li>33</li>
-			</ul>
-		</li>
-	</ul>
-</section>
+        </section>
 		<footer>
 			<div class="bottom_nav">
 				<ul class="bottom_nav_ul">
@@ -131,7 +129,8 @@
 					</li>
 				</ul>
 			</div>
-		</footer></div>
+		</footer>
+		</div>
 	</body>
 </html>
 <script type="text/javascript">//	l轮播图
@@ -141,53 +140,39 @@ var s = new Swiper(".container", {
 	autoplayDisableOnInteraction: false,
 
 }) //  <轮播图>
-
+</script>
+<script>
 //3个内容页面
 $(function() {
-	var n = 0;
-	var size = $("#nei_ul").find(".nei_ul_li").size();
-	var w = $(window).width();
-	console.log(size);
-	$("#all").on("swipeLeft", function() {
-		n++;
-		console.log(n)
-		if(n > size) {
-			n = size-1;
-			
-		}
-			
-		$("#nei_ul").css("-webkit-transform", "translate3d(" + (-n * w) + "px,0,0)");
-		$(".name").eq(n).addClass("tapli").siblings().removeClass("tapli");
-	});
-	
-	$("#all").on("swipeRight", function() {
-		n=0;
-		n--;
-
-		if(n < 1) {
-			n = 0;
-		}
-		$("#nei_ul").css("-webkit-transform", "translate3d(" + (-n * w) + "px,0,0)")
-		$(".name").eq(n).addClass("tapli").siblings().removeClass("tapli");
-	});
-
+    var w=$(window).width();
 // console.log($(".name"))
     $(".name").eq(0).addClass("tapli");
 	$(".name").on("tap",function(){
-		$(this).addClass("tapli").siblings().removeClass("tapli");
-		
+		$(this).addClass("tapli").siblings().removeClass("tapli");	
 		var idx=$(this).index()-1;
 		$("#nei_ul").css("-webkit-transform", "translate3d(" + (-idx* w) + "px,0,0)")
 	});
 	//3个内容页面
 	//精选里的内容
+	var flag=true;
 	    var sss= $("#jianagxuan_ul").find(".dianzan");
 	    $(".dianzan").on("tap",function(){
-	    	$(this).find(".iconfont").css("color","red");
-	    	console.log($(this).parent().find(".dianZanTouXiang"));
-	    	$("#myselft").css("display","block")
-	    	$(this).parent().find(".dianZanTouXiang").append($("#myselft"));
-	    	$(this).find(".dianzan_span").html("已赞");
+	    	if(flag==true){
+	    		$(this).find(".iconfont").css("color","red");
+	    		$("#myselft").css("display","block")
+	    	    $(this).parent().find(".dianZanTouXiang").append($("#myselft"));
+	    	    $(this).find(".dianzan_span").html("取消");
+	    	    flag=false;
+	    	}
+	    	
+	        else{
+	        	$("#myselft").css("display","none");
+	    	    $(this).parent().find(".dianZanTouXiang").remove($("#myselft"));
+	    	    $(this).find(".dianzan_span").html("点赞");
+	    	    flag=true;
+	        }
+	    	
+	    	
 	    })
 //	    console.log($("#myselft"))
 	//精选里的内容
