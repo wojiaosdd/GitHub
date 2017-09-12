@@ -1,0 +1,47 @@
+.banner{
+	margin-top: 60px;
+}
+.biaozhun{
+	opacity: 0;
+	position: relative;
+}
+.biaozhun h3{
+	display: block;
+	width: 100%;
+	height: 2rem;
+	background-color: #eeeeee;
+    font-size: 1.2rem;
+    margin:.5rem 0px;
+    padding-left: 1rem;
+    line-height: 2rem;
+}
+.biaozhun p{
+	line-height: 150%;	
+}
+.biaozhun a{
+	line-height: 200%;	
+}
+.biaozhun a span{
+	font-weight:bold;
+}
+#tx1{
+	margin-top:2rem;
+}
+#tx2{
+	margin-top:2rem;
+}
+#tx3{
+	margin-top:2rem;
+}
+#tx4{
+	margin-top:2rem;
+}
+#tx5{
+	margin-top:2rem;
+}
+#tx6{
+	margin-top:2rem;
+}
+#tx7{
+	margin-top:2rem;
+}

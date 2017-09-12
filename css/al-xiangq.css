@@ -1,0 +1,16 @@
+.banner{
+	margin-top: 60px;
+}
+.m-top1{
+	margin-top: 2rem;
+    text-align: center;
+}
+.m-top h4{
+	font-size: 1.4rem;
+    text-align: center;
+    padding: 1rem;
+}
+.m-top p{
+	text-indent:2em;
+	line-height: 120%;
+}

@@ -64,3 +64,122 @@ input, select {
 ul{
     list-style: none;
 }
+
+#container{
+    max-width: 768px !important;
+    min-width: 320px !important;
+    margin: 0 auto !important;
+}
+html {
+    font-size: 100%;
+}
+body{
+    font-size: 1rem;
+    /*等于14px;*/
+}
+.drawer-main{
+    z-index: 200;
+}
+.nav-li{
+    border-bottom:1px solid #353131;
+}
+.dropdown-menu{  
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom:1rem;
+    box-shadow:0px;
+}
+.dropdown-menu{
+    width: 100%;
+    background-color: #222222;
+}
+.divider{
+    background-color: #353131 !important;
+}
+.dropdown-menu li a:hover{
+    color:#888888;
+    background-color: #222222;
+}
+.drawer-hamberger {
+    width: 65px;
+}
+.drawer-hamberger span, .drawer-hamberger span:before, .drawer-hamberger span:after{
+    background-color:#0088cc;
+    font-weight: bold;
+    height: 4px;
+    border-radius:15px;
+}
+.top1{
+    margin-left: 0px;
+}
+.top{
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 1;
+    height:60px;
+    line-height:60px; 
+    font-size: 14px;
+    color: #888888 !important;
+    height:60px;
+    border-bottom:1px solid #e5e5e5;
+    background-color: #ffffff;
+}
+.top-logo{
+    width: 140px;
+    height: 48px;
+}
+.top-fr span{
+    color:#ff8800;
+}
+
+
+
+footer{
+    width: 100%;
+    margin-top: 2rem;
+    background-color: #f8f8f8;
+}
+.footer-top{
+    text-align: center;
+    padding-bottom: 90px;
+}
+.footer-top a{      
+    font-size: 1.2rem;
+    color:#666666;    
+    line-height: 300%;
+}
+.footer-top p{
+    font-size: 1rem;
+    line-height: 200%;
+}
+.footer-top span{
+    padding:0.6rem;
+}
+footer .footer-di{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom:0px;
+    background-color: #0088cc;
+}
+footer .footer-di a{
+    display: block;
+    float: left;
+    width: 25%;
+    height: 60px;
+    color:#ffffff;
+    padding-top: .5rem;
+    text-align: center;
+    font-size: .8rem;
+}
+footer .footer-di i{
+    font-size:1.8rem;
+    line-height: 120%;
+}
+
+
+.t{
+    background-color: pink;
+}
